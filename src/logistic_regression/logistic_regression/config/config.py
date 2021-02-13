@@ -14,7 +14,8 @@ TEST_DATA_FILE = "adult_test.txt"
 RANDOM_STATE = 0
 
 # saved piplines
-PIPELINE_NAME = 'logistic_regression.pkl'
+PIPELINE_NAME = 'logistic_regression'
+PIPELINE_SAVE_FILE= f'{PIPELINE_NAME}_output_v'
 
 
 # target variables
