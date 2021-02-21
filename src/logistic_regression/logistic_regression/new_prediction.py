@@ -14,5 +14,5 @@ y_test = [config.TARGET_DICT[x.split('.')[0]] for x in y_test]
 
 results = make_prediction(data[config.FEATURES])
 
-print('test F1 score: {}'.format(f1_score(y_test, results[0])))
-print('test roc-auc: {}'.format(roc_auc_score(y_test, results[1])))
+print('tests F1 score: {}'.format(f1_score(y_test, results[0])))
+print('tests roc-auc: {}'.format(roc_auc_score(y_test, results[1])))

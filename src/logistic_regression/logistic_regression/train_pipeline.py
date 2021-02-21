@@ -15,9 +15,9 @@ def run_training():
     #data = pd.read_csv(config.DATASET_DIR/config.TRAINING_DATA_FILE)
     _data = load_dataset(file_name =config.TRAINING_DATA_FILE)
     # assign column labels to the imported data
-    _data.columns = config.DATA_COLUMNS
+    #_data.columns = config.DATA_COLUMNS
 
-    # divide train and test
+    # divide train and tests
     x_train, x_test, y_train, y_test = train_test_split(_data[config.FEATURES], _data[config.TARGET], test_size=0.2,
                                                         random_state=0, stratify=_data[config.TARGET])
 
