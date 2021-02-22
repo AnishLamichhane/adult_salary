@@ -1,0 +1,14 @@
+
+
+# api
+flask>=1.1.1,<1.2.0
+
+# schema validation
+marshmallow==2.17.0
+
+# local installation
+-e "E:\DataScience\Projects\adult_salary\src\logistic_regression"
+
+
+
+# Deployment

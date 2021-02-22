@@ -72,9 +72,9 @@ class NumericalDiscretizer(BaseEstimator, TransformerMixin):
                 # age discretization
                 test=X['age']
                 X['age_group'] = X['age'].apply(lambda x: get_age_group(x))
-            elif feature == 'education-num':
+            elif feature == 'education_num':
                 # education-num discretization
-                X['edu-group'] = X[feature].apply(lambda x: get_education_group(x))
+                X['edu_group'] = X[feature].apply(lambda x: get_education_group(x))
         return X
 
 
