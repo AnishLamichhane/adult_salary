@@ -1,3 +1,6 @@
 steps:
   - label: "Example Test"
     command: echo "Hello!"
+
+  - label: " pytest"
+    command: pytest tests
