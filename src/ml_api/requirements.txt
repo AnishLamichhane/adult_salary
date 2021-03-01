@@ -7,8 +7,9 @@ flask>=1.1.1,<1.2.0
 marshmallow==2.17.0
 
 # local installation
--e "E:\DataScience\Projects\adult_salary\src\logistic_regression"
+#-e "E:\DataScience\Projects\adult_salary\src\logistic_regression"
 
-
+# install from gemfury
+logistic_regression==0.1.0
 
 # Deployment
