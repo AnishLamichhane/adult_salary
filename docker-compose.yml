@@ -5,5 +5,5 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: model
-    command: python src/logistic_regression/logistic_regression/train_pipeline.py
+    command: bash -c "python src/logistic_regression/logistic_regression/train_pipeline.py"
 
