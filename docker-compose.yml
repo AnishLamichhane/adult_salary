@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: test
-    command: bash "python src/logistic_regression/logistic_regression/train_pipeline.py"
+    container_name: model
+    command: python src/logistic_regression/logistic_regression/train_pipeline.py
 

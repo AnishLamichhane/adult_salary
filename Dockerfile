@@ -11,6 +11,7 @@ ADD src /adult_salary/src
 # install dependencies
 RUN pip install -r src/logistic_regression/requirements.txt
 
+ENV PYTHONPATH "/adult_salary/src/logistic_regression/"
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
 
