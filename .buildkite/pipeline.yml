@@ -4,6 +4,3 @@ steps:
 
   - label: "build model"
     command: docker-compose -f docker-compose.yml up
-    plugins:
-      - docker-compose#v3.0.3
-
