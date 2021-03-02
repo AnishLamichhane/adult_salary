@@ -2,8 +2,6 @@ steps:
   - label: "Example Test"
     command: echo "Hello!"
 
-  - label: " Train logistic regression model"
-    command: python src\logistic_regression\logistic_regression\train_pipeline.py
+  - label: "build model"
+    command: docker-compose -f docker-compose.yml up
 
-    #- label: "Test logistic regression model"
-    #command: pytest \src\logistic_regression\tests

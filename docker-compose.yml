@@ -1,0 +1,9 @@
+version: '2'
+services:
+  logistic_regression_train_model:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: test
+    command: bash "python src/logistic_regression/logistic_regression/train_pipeline.py"
+
