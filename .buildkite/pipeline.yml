@@ -2,7 +2,7 @@ steps:
   - label: "Example Test"
     command: echo "Hello!"
 
-  - label:
+  - label: " Train logistic regression model"
     command: python \src\logistic_regression\train_pipeline.py
 
     #- label: "Test logistic regression model"
