@@ -2,5 +2,8 @@ steps:
   - label: "Example Test"
     command: echo "Hello!"
 
-  - label: " pytest"
-    command: pytest tests
+  - label: "Test logistic regression model"
+    command: pytest \src\logistic_regression\tests
+
+  - label:
+    command: python \src\logistic_regression\train_pipeline.py
