@@ -1,6 +1,3 @@
-
-
-
 import io
 import os
 from pathlib import Path
@@ -17,8 +14,10 @@ AUTHOR = ''
 REQUIRES_PYTHON = '>=3.6.0'
 
 
+here = os.path.abspath(os.path.dirname(__file__))
+filePath = os.path.join(here, 'requirements.txt')
 # packages required for this module to be executed?
-def list_reqs(fname='requirements.txt'):
+def list_reqs(fname=filePath):
     with open(fname) as fd:
         return fd.read().splitlines()
 
