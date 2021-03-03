@@ -3,4 +3,4 @@ steps:
     command: echo "Hello!"
 
   - label: "build model"
-    command: docker-compose -f docker-compose.yml up
+    command: docker-compose run --rm logistic_regression_api

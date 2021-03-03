@@ -14,7 +14,8 @@ def test_make_single_prediction():
 
     # Then
     assert subject is not None
-    assert isinstance(subject[0][0], np.int32)
-    assert isinstance(subject[1][0], np.float)
+    print (type(subject.get('prediction')[0][0]))
+
+    assert isinstance(subject.get('prediction')[1][0], np.float)
 
 #test_make_single_prediction()

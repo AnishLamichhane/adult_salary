@@ -1,9 +1,8 @@
 version: '3'
 services:
-  logistic_regression_train_model:
+  logistic_regression_api:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: model
-    command: python /adult_salary/src/logistic_regression/logistic_regression/train_pipeline.py
-
+    container_name: adult_salary_api
+    command: pytest /adult_salary/src/ml_api/tests

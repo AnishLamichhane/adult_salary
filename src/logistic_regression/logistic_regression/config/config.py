@@ -1,12 +1,12 @@
 import pathlib
 import logistic_regression
 
+
 PACKAGE_ROOT =pathlib.Path(logistic_regression.__file__).resolve().parent
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models/"
 DATASET_DIR= PACKAGE_ROOT /'datasets/'
 
 # data
-
 TRAINING_DATA_FILE = "adult_data.txt"
 TEST_DATA_FILE = "adult_test.txt"
 
@@ -30,7 +30,9 @@ DATA_COLUMNS = ['age', 'workclass', 'fnlwgt', 'education', 'education_num', 'mar
 FEATURES = ['workclass', 'age', 'education', 'education_num', 'marital_status', 'occupation',
             'relationship', 'race', 'sex', 'capital_gain', 'capital_loss', 'hours_per_week', 'native_country']
 
-# this variable is to calculate the temporal variable,
+# Tolerance for rare values
+TOLERANCE = 0.01
+
 # must be dropped afterwards
 DROP_FEATURES = 'fnlwgt'
 
