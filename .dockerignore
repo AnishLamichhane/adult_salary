@@ -1,0 +1,20 @@
+# files and folder to ignore with docker
+jupyter_notebooks*
+*/env*
+*/venv*
+.buildkite*
+*.env
+*.log
+.git
+.gitignore
+src/logistic_regression/tox
+src/logistic_regression/build
+src/logistic_regression/logistic_regression.egg-info
+src/logistic_regression/__pycache__
+src/logistic_regression/MANIFEST.in
+src/logistic_regression/logs
+
+
+
+
+

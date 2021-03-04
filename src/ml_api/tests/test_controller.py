@@ -3,8 +3,7 @@ from logistic_regression.processing.data_management import   load_dataset
 from logistic_regression import __version__ as _version
 
 import json
-import math
-import pandas as pd
+
 
 def test_health_endpoint_returns_200(flask_test_client):
     # when

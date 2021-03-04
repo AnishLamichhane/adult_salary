@@ -14,7 +14,7 @@ adult_salary_pipe=Pipeline(
          pp.NumericalDiscretizer(variables=config.NUMERICAL_VARS_TO_DISCREET)),
         ('rare_label_encoder',
          pp.RareLabelCategoricalEncoder(
-             tol=0.01,
+             tol=config.TOLERANCE,
              variables=config.CATEGORICAL_VARS)),
         ('categorical_encoder',
          pp.CategoricalEncoder(variables=config.CATEGORICAL_VARS)),

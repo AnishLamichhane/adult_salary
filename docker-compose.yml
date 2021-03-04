@@ -1,0 +1,8 @@
+version: '3'
+services:
+  logistic_regression_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: adult_salary_api
+    command: pytest /adult_salary/src/ml_api/tests
