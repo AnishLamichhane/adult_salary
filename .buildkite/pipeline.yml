@@ -1,6 +1,3 @@
 steps:
-  - label: "Example Test"
-    command: echo "Hello!"
-
-  - label: "build model"
+  - label: "adult_salary_api
     command: docker-compose run --rm logistic_regression_api
